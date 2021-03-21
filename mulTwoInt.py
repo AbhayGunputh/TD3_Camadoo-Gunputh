@@ -1,16 +1,21 @@
 #!/bin/bash/env python3
-def mul(number1,number2):
-    multiply = number1 * number2
-    return multiply
+number1 = []
+number2 = []
+def mul(a,b):
+	result = a*b
+	return result
+def main():
+	while True:
+		try:
+			first = int(input("Enter the first number : "))
+			sec = int(input("Enter the second number : "))
+			num1 = number1.append(first)
+			num2 = number2.append(sec)
+			print(mul(number1[0],number2[0]))
+			break
+		except:
+			print("You have enter more than one number or 0 number")
 
+print("-----MULTIPLICATION OF 2 NUMBERS-----")
+main()
 
-num1 = float(input("Enter the first number : " ))
-while(num1 < 0):
-    print("-----Enter positive number-----")
-    num1 = float(input("Enter the first number : " ))
-print()
-num2 = float(input("Enter the second number : " ))
-while (num2 < 0):
-    print("-----Enter positive number-----")
-    num2 = float(input("Enter the second number : " ))
-print(mul(num1, num2))
